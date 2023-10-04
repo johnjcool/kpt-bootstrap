@@ -1,0 +1,13 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: crds
+  namespace: config-management-system
+spec:
+  sourceFormat: unstructured
+  sourceType: git
+  git:
+    branch: main
+    dir: crds/base
+    repo: https://github.com/johnjcool/kpt-bootstrap
+    auth: none
