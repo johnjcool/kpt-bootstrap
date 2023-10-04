@@ -1,0 +1,11 @@
+# Comma separated list of feature gates that should be enabled on the controller pod & webhook pod.
+featureGates: "ExperimentalGatewayAPISupport=true,ExperimentalCertificateSigningRequestControllers=true"
+
+global:
+  leaderElection:
+    namespace: cert-manager
+
+prometheus:
+  enabled: true
+  servicemonitor:
+    enabled: true
