@@ -9,6 +9,8 @@ kubeEtcd:
 
 prometheus:
   prometheusSpec:
+    scrapeConfigSelectorNilUsesHelmValues: false
+    probeSelectorNilUsesHelmValues: false
     podMonitorSelectorNilUsesHelmValues: false
     ruleSelectorNilUsesHelmValues: false
     serviceMonitorSelectorNilUsesHelmValues: false
