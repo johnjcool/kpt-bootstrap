@@ -5,3 +5,4 @@ resources:
   - crds.yaml
   - cert-manager.yaml
   - metrics-system.yaml
+  - system-upgrade.yaml
