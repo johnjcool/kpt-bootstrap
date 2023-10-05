@@ -6,3 +6,4 @@ resources:
   - cert-manager.yaml
   - metrics-system.yaml
   - system-upgrade.yaml
+  - config-management-system.yaml
