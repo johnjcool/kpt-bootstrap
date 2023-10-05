@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - crds.yaml
   - cert-manager.yaml
+  - metric-system.yaml

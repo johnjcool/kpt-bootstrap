@@ -1,0 +1,13 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: metric-system
+  namespace: config-management-system
+spec:
+  sourceFormat: unstructured
+  sourceType: git
+  git:
+    branch: main
+    dir: metric-system/base
+    repo: https://github.com/johnjcool/kpt-bootstrap
+    auth: none
