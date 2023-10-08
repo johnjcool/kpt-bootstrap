@@ -10,7 +10,7 @@ spec:
   version:  0.0.4
   nodeSelector:
     matchExpressions:
-      - key: k3s.io/hostname
+      - key: elemental.cattle.io/image
         operator: Exists
   serviceAccountName: system-upgrade
   cordon: true
