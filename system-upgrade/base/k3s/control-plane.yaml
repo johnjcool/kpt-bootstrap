@@ -1,7 +1,7 @@
 apiVersion: upgrade.cattle.io/v1
 kind: Plan
 metadata:
-  name: control-plane
+  name: control-plane-plan
   namespace: system-upgrade
 spec:
   concurrency: 1
